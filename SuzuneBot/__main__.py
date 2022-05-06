@@ -75,34 +75,30 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 * Hello {} ♡︎ !*
 ════════════════════════════
-• I'Aᴍ [「𝐒ᴜᴢᴜɴᴇ 𝐇ᴏʀɪᴋɪᴛᴀ」](https://telegra.ph/file/9cd0b9c94262fe74aae07.jpg)
-• 𝕿𝖍𝖊 𝕮𝖑𝖆𝖘𝖘 𝕽𝖔𝖔𝖒 𝕺𝖋 𝕰𝖑𝖎𝖙𝖊
+• I'Aᴍ [『ӄǟռռǟ ӄǟʍʊɨ』](https://telegra.ph/file/e8887713cd3112fd4b29e.jpg)
 • *Aᴍ Vᴇʀʏ Fᴀꜱᴛ Aɴᴅ Mᴏʀᴇ Eꜰꜰɪᴄɪᴇɴᴛ | Pʀᴏᴠɪᴅᴇ Aᴡᴇꜱᴏᴍᴇ Fᴇᴀᴛᴜʀᴇꜱ!*
 ════════════════════════════
 × *Uᴘᴛɪᴍᴇ:* {}
 """
 
 G_START_TEXT = """
-Hello Suzune Is Here.
+Hello Kanna Is Here.
 Uptime - {}!
 """
 
 HELP_STRINGS = """
-Hello My name is *{}*.
-Here's The Settings Of This Bot[.](https://telegra.ph/file/3f5b509b1ebf57ecba47d.jpg)
+Hello My name is *{ƘƛƝƝƛ ƘƛMƲƖ}*.
+Here's The Settings Of This Bot[.](https://telegra.ph/file/d0448bf443fbea84e1a2d.jpg)
 
 """.format(
     dispatcher.bot.first_name,
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-SuzuneBot_IMG = "https://telegra.ph/file/a3868caeaf1b3e55ccc90.jpg"
+SuzuneBot_IMG = "https://telegra.ph/file/3dc8108472b24d670b0f4.mp4"
 
 SuzuneBotG_IMG = "https://telegra.ph/file/819b0d3b4d55636d19f59.jpg"
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting [Nobita](https://t.me/TheNobita).
- Those who cannot provide monetary support are welcome to help us develop the bot at @VegaCodes.
  """
 
 IMPORTED = {}
@@ -209,7 +205,7 @@ def start(update: Update, context: CallbackContext):
 
         else:
             first_name = update.effective_user.first_name
-            update.effective_message.reply_photo(
+            update.effective_message.reply_animation(
                 SuzuneBot_IMG,
                 PM_START_TEXT.format(
                     escape_markdown(first_name), escape_markdown(context.bot.first_name)
@@ -220,8 +216,8 @@ def start(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="➕ᴀᴅᴅ 𝐒ᴜᴢᴜɴᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ️➕️",
-                                url="t.me/Suzune_Superbot?startgroup=true".format(
+                                text="➕ᴀᴅᴅ Kanna Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ️➕️",
+                                url="http://t.me/Kanna_Superbot?startgroup=true".format(
                                     context.bot.username
                                 ),
                             ),
@@ -233,13 +229,13 @@ def start(update: Update, context: CallbackContext):
                             ),
                             InlineKeyboardButton(
                                 text="ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ️",
-                                url="https://t.me/SuzuneSuperbot",
+                                url="http://t.me/Kanna_Superbot",
                             ),
                         ],
                         [
                             InlineKeyboardButton(
                                 text="Owner",
-                                url="https://t.me/TheVenomXD",
+                                url="https://t.me/i_am_wellandgood",
                             ),
                         ],
                     ]
